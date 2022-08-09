@@ -1,3 +1,8 @@
 from django.contrib import admin
+from Variedades.models import Variety
 
-# Register your models here.
+#admin.site.register(Variety)
+
+@admin.register(Variety)
+class Variety_admin(admin.ModelAdmin):
+    list_display = ['name', 'appearance', 'smell', 'taste']

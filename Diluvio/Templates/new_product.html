@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+
+{% block contenido_que_cambia %}
+
 <h1>{{new_variety.name}}</h1>
 
 <h2>APARIENCIA</h2>
@@ -14,3 +18,5 @@
 
 <H2>IBU</H2>
 <H3>{{new_variety.ibu}}</H3>
+
+{% endblock %}
