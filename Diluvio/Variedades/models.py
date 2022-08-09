@@ -8,3 +8,5 @@ class Variety(models.Model):
     marriage = models.CharField(max_length=200)
     ibu = models.FloatField()
 
+    def __str__(self):
+        return self.name
